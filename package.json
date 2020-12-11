@@ -21,7 +21,7 @@
     "styled-components": "^5.2.1",
     "web-vitals": "^0.2.4"
   },
-  "homepage": "https://ianchen6501.github.io/w22-react-blog/",
+  "homepage": "https://ianchen6501.github.io/w24-react-blog/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
