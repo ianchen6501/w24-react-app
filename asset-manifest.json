@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/w24-react-blog/static/css/main.0d1025ab.chunk.css",
-    "main.js": "/w24-react-blog/static/js/main.51f79aaa.chunk.js",
-    "main.js.map": "/w24-react-blog/static/js/main.51f79aaa.chunk.js.map",
-    "runtime-main.js": "/w24-react-blog/static/js/runtime-main.47d4d63a.js",
-    "runtime-main.js.map": "/w24-react-blog/static/js/runtime-main.47d4d63a.js.map",
-    "static/js/2.a87385d1.chunk.js": "/w24-react-blog/static/js/2.a87385d1.chunk.js",
-    "static/js/2.a87385d1.chunk.js.map": "/w24-react-blog/static/js/2.a87385d1.chunk.js.map",
-    "index.html": "/w24-react-blog/index.html",
-    "static/css/main.0d1025ab.chunk.css.map": "/w24-react-blog/static/css/main.0d1025ab.chunk.css.map",
-    "static/js/2.a87385d1.chunk.js.LICENSE.txt": "/w24-react-blog/static/js/2.a87385d1.chunk.js.LICENSE.txt"
+    "main.css": "/w24-react-app/static/css/main.0d1025ab.chunk.css",
+    "main.js": "/w24-react-app/static/js/main.51f79aaa.chunk.js",
+    "main.js.map": "/w24-react-app/static/js/main.51f79aaa.chunk.js.map",
+    "runtime-main.js": "/w24-react-app/static/js/runtime-main.b789fc32.js",
+    "runtime-main.js.map": "/w24-react-app/static/js/runtime-main.b789fc32.js.map",
+    "static/js/2.2b47fc21.chunk.js": "/w24-react-app/static/js/2.2b47fc21.chunk.js",
+    "static/js/2.2b47fc21.chunk.js.map": "/w24-react-app/static/js/2.2b47fc21.chunk.js.map",
+    "index.html": "/w24-react-app/index.html",
+    "static/css/main.0d1025ab.chunk.css.map": "/w24-react-app/static/css/main.0d1025ab.chunk.css.map",
+    "static/js/2.2b47fc21.chunk.js.LICENSE.txt": "/w24-react-app/static/js/2.2b47fc21.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.47d4d63a.js",
-    "static/js/2.a87385d1.chunk.js",
+    "static/js/runtime-main.b789fc32.js",
+    "static/js/2.2b47fc21.chunk.js",
     "static/css/main.0d1025ab.chunk.css",
     "static/js/main.51f79aaa.chunk.js"
   ]
