@@ -20,7 +20,7 @@ const Banner = styled.div `
   border-radius: 50px;
   transition: top 0.1s;
 
-  ${props => props.isMouseOver && `top: 20vh;`}
+  ${props => props.isHover && `top: 20vh;`}
 `
 
 const Body = styled.div `
@@ -33,19 +33,18 @@ const Body = styled.div `
   transform: translate(-20%, 0%);
 `
 
-
 export default function AboutPage() {
-  const [isMouseOver, setIsMouseOver] = useState(false)
+  const [isHover, setIsHover] = useState(false)
   const [isBodyShow, setIsBodyShow] = useState(false)
 
-  function handleOnMouseOver() {
-    setIsMouseOver(true)
+  function handleOnHover() {
+    setIsHover(true)
     setTimeout(() => setIsBodyShow(true), 100)
   }
 
   return (
     <Container>
-      <Banner onMouseOver={() => {handleOnMouseOver()}} isMouseOver={isMouseOver}>關於我們</Banner>
+      <Banner onMouseOver={() => {handleOnHover()}} isHover={isHover}>關於我們</Banner>
       {isBodyShow && (
         <Body>enjoy writting!<br />
           這是一個大家集體創作的部落格。<br />
