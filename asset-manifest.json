@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/w24-react-app/static/css/main.0d1025ab.chunk.css",
-    "main.js": "/w24-react-app/static/js/main.cfe6b54b.chunk.js",
-    "main.js.map": "/w24-react-app/static/js/main.cfe6b54b.chunk.js.map",
+    "main.js": "/w24-react-app/static/js/main.5f86fbf1.chunk.js",
+    "main.js.map": "/w24-react-app/static/js/main.5f86fbf1.chunk.js.map",
     "runtime-main.js": "/w24-react-app/static/js/runtime-main.b789fc32.js",
     "runtime-main.js.map": "/w24-react-app/static/js/runtime-main.b789fc32.js.map",
     "static/js/2.10ef9bc0.chunk.js": "/w24-react-app/static/js/2.10ef9bc0.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.b789fc32.js",
     "static/js/2.10ef9bc0.chunk.js",
     "static/css/main.0d1025ab.chunk.css",
-    "static/js/main.cfe6b54b.chunk.js"
+    "static/js/main.5f86fbf1.chunk.js"
   ]
 }
