@@ -45,7 +45,7 @@ export default function AboutPage() {
 
   return (
     <Container>
-      <Banner onMouseOver={() => handleOnMouseOver()} isMouseOver={isMouseOver}>關於我們</Banner>
+      <Banner onMouseOver={() => {handleOnMouseOver()}} isMouseOver={isMouseOver}>關於我們</Banner>
       {isBodyShow && (
         <Body>enjoy writting!<br />
           這是一個大家集體創作的部落格。<br />
