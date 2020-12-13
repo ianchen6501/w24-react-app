@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from 'styled-components'
 
 export const Footer = styled.div `
 position: fixed;
@@ -9,6 +9,7 @@ font-size: 16px;
 display: flex;
 justify-content: center;
 align-items: center;
-background: ${props => props.theme.colors.light_gray};
+background: ${props => props.theme.primary_colors.black};
 z-index: 3;
+color: ${props => props.theme.primary_colors.green};
 `

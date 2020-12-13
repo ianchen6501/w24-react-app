@@ -8,4 +8,5 @@ export {
   Section,
   Input,
   Textarea,
+  UserInput,
 } from './Form'

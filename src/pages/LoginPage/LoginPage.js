@@ -1,12 +1,13 @@
-import React from "react"
+import React from 'react'
 import {
   ErrorMessage,
   Container,
   Form,
   InputContainer,
   Button,
+  UserInput
 } from '../../components/Form'
-import useHandleLogin from "../../hooks/useHandleLogin"
+import useHandleLogin from '../../hooks/useHandleLogin'
 
 export default function LoginPage() {
   const {
@@ -15,7 +16,6 @@ export default function LoginPage() {
     password,
     setPassword,
     errorMessage,
-    setErrormessage,
     handleLogin
   } = useHandleLogin()
 
@@ -23,12 +23,12 @@ export default function LoginPage() {
     <Container>
       <Form onSubmit={handleLogin}>
         <InputContainer>
-          username:{" "}
-          <input type="text" value={username} onChange={(e) => setUsername(e.target.value)}></input>
+          username:{' '}
+          <UserInput type='text' value={username} onChange={(e) => setUsername(e.target.value)}></UserInput>
         </InputContainer>
         <InputContainer>
-          password:{" "}
-          <input type="password" value={password} onChange={(e) => setPassword(e.target.value)}></input>
+          password:{' '}
+          <UserInput type='password' value={password} onChange={(e) => setPassword(e.target.value)}></UserInput>
         </InputContainer>
         <Button>登入</Button>
       </Form>

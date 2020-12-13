@@ -1,9 +1,9 @@
-import { useState } from "react"
+import { useState } from 'react'
 import { register } from '../WebAPI'
 import { deleteAuthTokenFromLocalStorage, setAuthTokenToLocalStorage } from '../utils'
 import { useHistory } from 'react-router-dom'
-import { getUserData } from "../redux/reducers/userReducer"
-import { useDispatch } from "react-redux"
+import { getUserData } from '../redux/reducers/userReducer'
+import { useDispatch } from 'react-redux'
 
 export default function useHandleRegister() {
   const [username, setUsername] = useState('')

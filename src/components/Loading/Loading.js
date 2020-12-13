@@ -1,20 +1,17 @@
-import React from "react"
-import styled from "styled-components"
+import React from 'react'
+import styled from 'styled-components'
 
-const Section = styled.section `
-  background: ${props => props.theme.colors.light_gray};
-  box-sizing: border-box;
+const Section = styled.div `
+  background: ${props => props.theme.primary_colors.green};
   position: relative;
   witdh: 100%;
   min-height: 100%;
-  padding-top: 64px;
-  padding-bottom: 50px;
-  text-align: center;
   font-size: ${props => props.theme.fontSizes.h3};
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 0;
+  color: ${props => props.theme.primary_colors.black}
 `
 
 export default function Loading() {

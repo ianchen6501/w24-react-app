@@ -1,10 +1,13 @@
-import styled from "styled-components"
+import styled from 'styled-components'
 
 //login && register
 export const ErrorMessage = styled.div `
-  color: red;
+  color: ${props => props.theme.primary_colors.light_black};
+  font-size: 20px;
+  font-weight: bold;
   position: relative;
   text-align: center;
+  margin-top: 10px;
 `
 
 export const Container = styled.div `
@@ -15,18 +18,17 @@ export const Container = styled.div `
 `
 
 export const Form = styled.form `
-  margin-top: 50px;
   position: relative;
   left: 50%;
   transform: translate(-50%,0px);
-  width: 30vw;
+  width: fit-content;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
-  background: white;
   border-radius: 5px;
-  border: solid 0.5px rgb(0,0,0,0.2);
+  border: solid 2px ${props => props.theme.primary_colors.black};
+  padding: 0px 20px 20px 20px;
 `
 
 export const InputContainer = styled.div `
@@ -35,21 +37,38 @@ export const InputContainer = styled.div `
 `
 
 export const Button = styled.button `
-  padding: 6px 10px;
+  padding: 10px;
   border: none;
-  border-radius: 2px;
-  background: rgb(0,0,0,0.15);
-  font-size: 20px;
-  position: relative;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  border-radius: 6px;
+  font-size: 16px;
+  background: ${props => props.theme.primary_colors.light_black};
+  color:  ${props => props.theme.primary_colors.green};
+  transform: background 0.1s, color 0.1s;
+
+  &:hover {
+    background: white;
+    color: black;
+  }
+
+  &:focus {
+    outline: none;
+  }
+`
+
+export const UserInput = styled.input `
+  height: 30px;
+  width: 100%;
+  border: solid 1px ${props => props.theme.primary_colors.black};
+  border-radius: 3px;
+  font-size:20px;
+  margin-top:10px;
 `
 
 //editPost && newPost
 export const NewPostContainer = styled.div `
-  height: 70%;
+  height: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
 
@@ -66,14 +85,15 @@ export const Section = styled.div `
 export const Input = styled.input`
   width: 100%;
   height: 40px;
-  border: solid 0.1px rgb(0,0,0,0.2);
+  border: solid 2px ${props => props.theme.primary_colors.black};
   border-radius: 3px;
   font-size:20px;
 `
 
 export const Textarea = styled.textarea`
   width: 100%;
-  border: solid 0.1px rgb(0,0,0,0.2);
+  border: solid 2px ${props => props.theme.primary_colors.black};
   border-radius: 3px;
   font-size:20px;
+  margin-bottom: 20px;
 `

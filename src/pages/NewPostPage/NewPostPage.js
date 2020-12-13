@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React, { useEffect, useState } from 'react'
 import { useHistory } from 'react-router-dom'
 import { createPost } from '../../redux/reducers/postReducer'
 import { useDispatch, useSelector } from 'react-redux'
@@ -58,7 +58,7 @@ export default function NewPostPage() {
       </Section>
       <Section>
         <h2>Body</h2>
-        <Textarea value={body} onChange={(event) => {setBody(event.target.value)}} rows="4"></Textarea>
+        <Textarea value={body} onChange={(event) => {setBody(event.target.value)}} rows='4'></Textarea>
       </Section>
       <Button onClick={handleSubmit}>Submit</Button>
       <ErrorMessage>{errorMessage}</ErrorMessage>

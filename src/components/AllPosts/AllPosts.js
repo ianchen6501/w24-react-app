@@ -1,24 +1,20 @@
-import React, { useEffect, useState } from "react"
-import styled from "styled-components"
+import React, { useEffect } from 'react'
+import styled from 'styled-components'
 import { useDispatch, useSelector } from 'react-redux'
 import { getAllPosts } from '../../redux/reducers/postReducer'
 import Post from './Post'
-import Loading from "../Loading"
+import Loading from '../Loading'
 
-const Container = styled.div `
+export const Container = styled.div `
   position: relative;
-  min-height: 100%
-  box-sizing: border-box;
-  padding-top: 64px;
-  padding-bottom: 100px;
-  z-index-1;
-  width: 80%;
+  background: ${props => props.theme.primary_colors.green};
+  min-height: 100%;
+  z-index: 1;
   margin: 0 auto;
-`
+  box-sizing: border-box;
+  padding-top: 30px;
+  padding-bottom: 80px;
 
-const PostsContainer = styled.div `
-  margin-top: 30px;
-  outline: solid rgb(0,0,0,0.2) 0.5px;
 `
 
 export default function AllPosts() {
@@ -37,11 +33,9 @@ export default function AllPosts() {
 
   return (
     <Container>
-      <PostsContainer>
         { allPosts.map(post => 
           <Post post={post} key={post.id}></Post>)
         }
-      </PostsContainer>
     </Container>
   )
 }

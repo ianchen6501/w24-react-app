@@ -1,12 +1,12 @@
-import React from "react"
-import styled from "styled-components"
+import React from 'react'
+import styled from 'styled-components'
 import {
   Link,
   useLocation,
   useHistory
-} from "react-router-dom";
+} from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux'
-import { setAuthTokenResponse, setUserData } from "../../redux/reducers/userReducer"
+import { setAuthTokenResponse, setUserData } from '../../redux/reducers/userReducer'
 import { deleteAuthTokenFromLocalStorage } from '../../utils'
 
 const HeaderContainer =styled.div `
@@ -19,9 +19,8 @@ const HeaderContainer =styled.div `
   left: 0;
   top: 0;
   bottom: 0;
-  border-bottom: solid 0.1px rgb(0,0,0,0.2);
   padding: 0px, 30px;
-  background: white;
+  background: ${props => props.theme.primary_colors.black};
   box-shadow: 0.2px 0.2px 0.3px;
   z-index: 2;
 `
@@ -31,7 +30,7 @@ const Brand = styled.div `
   font-size: 32px;
   font-weight: bold;
   text-decoration: none;
-  color: black;
+  color: ${props => props.theme.primary_colors.green};
 `
 
 const NavbarList = styled.div `
@@ -43,20 +42,22 @@ const Nav = styled(Link) `
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 64px;
   box-sizing: border-box;
-  width: 100px;
+  padding: 10px 15px;
   cursor: pointer;
-  color: black;
+  border-radius: 10px;
+  color: ${props => props.theme.primary_colors.green};
+  font-weight: bold;
   text-decoration: none;
-  transition: font-size 0.3s;
+  transition: font-size 0.3s, background 0.3s;
+  margin-right: 10px;
 
   &:hover {
     font-size:18px
   }
 
   ${(props) => 
-    props.$active && `background: rgb(0,0,0,0.2)`
+    props.$active && `background: ${props.theme.primary_colors.light_black};`
   }
 `
 
@@ -85,7 +86,7 @@ export default function Header() {
   return (
     <HeaderContainer>
       <LeftContainer>
-        <Brand as={Link} to='/'>大家的部落格</Brand>
+        <Brand as={Link} to='/'>Blogger</Brand>
         <NavbarList>
           <Nav to='/' $active={location.pathname === '/'} >首頁</Nav>
           <Nav to='/list' $active={location.pathname === '/list'} >文章列表</Nav>

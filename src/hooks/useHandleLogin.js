@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState } from 'react'
 import { setAuthTokenToLocalStorage } from '../utils'
 import { useHistory } from 'react-router-dom'
 import { getAuthToken, getUserData } from '../redux/reducers/userReducer'

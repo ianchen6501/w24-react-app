@@ -1,10 +1,10 @@
-import React, { useEffect } from "react"
-import styled from "styled-components"
-import PropTypes from "prop-types"
-import { useParams } from "react-router-dom"
+import React, { useEffect } from 'react'
+import styled from 'styled-components'
+import PropTypes from 'prop-types'
+import { useParams } from 'react-router-dom'
 import { getPost, setPost } from '../../redux/reducers/postReducer'
 import { useDispatch, useSelector } from 'react-redux'
-import Loading from "../../components/Loading"
+import Loading from '../../components/Loading'
 import { Link } from 'react-router-dom'
 
 
@@ -40,6 +40,8 @@ const Title = styled.div `
 const CreatedAt = styled.div `
   font-size: 20px;
   color: rgb(0,0,0,0.6);
+  display: flex;
+  align-items: center;
 `
 
 const Body = styled.div `
@@ -50,9 +52,18 @@ const Body = styled.div `
 `
 
 const EditButton = styled.button `
-  padding: 10px;
-  margin-left: 20px;
-  border: none;
+padding: 10px;
+margin-left: 20px;
+border: none;
+border-radius: 6px;
+background: ${props => props.theme.primary_colors.light_black};
+color:  ${props => props.theme.primary_colors.green};
+transform: background 0.1s, color 0.1s;
+
+&:hover {
+  background: white;
+  color: black;
+}
 `
 
 export default function NewPostPage() {
